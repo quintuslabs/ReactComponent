@@ -8,7 +8,6 @@ import Select from "../Components/Select/Select";
 import CheckBox from "../Components/CheckBox/CheckBox";
 import RadioGroup from "../Components/RadioGroup/RadioGroup";
 import FloatingButton from "../Components/FloatingButton/FloatingButton";
-import OtpInput from "../Components/OTPInput/OtpInput";
 
 class Index extends Component {
   constructor(props) {
@@ -46,9 +45,6 @@ class Index extends Component {
 
     console.log(value);
   }
-  handleOtpChange = otp => {
-    this.setState({ otp });
-  };
 
   handleCheck = e => {
     const { name } = e.target;
@@ -253,26 +249,7 @@ class Index extends Component {
             width: "33%",
             padding: "5vw"
           }}
-        >
-          <OtpInput
-            inputStyle={{
-              width: "3rem",
-              height: "3rem",
-              margin: "0 1rem",
-              fontSize: "2rem",
-              borderRadius: 4,
-              border: "1px solid rgba(0,0,0,0.3)"
-            }}
-            numInputs={this.state.numInputs}
-            isDisabled={this.state.isDisabled}
-            hasErrored={this.state.hasErrored}
-            errorStyle="error"
-            onChange={this.handleOtpChange}
-            separator={<span>{this.state.separator}</span>}
-            isInputNum={this.state.isInputNum}
-            shouldAutoFocus
-          />
-        </div>
+        ></div>
 
         <FloatingButton onClick={() => this.handleFloatSubmit()} />
       </div>
