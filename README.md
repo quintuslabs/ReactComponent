@@ -1,3 +1,3 @@
-# react-grznhq
+# ReactComponent
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-grznhq)
+[ReactComponent](https://react-componentes.stackblitz.io)
