@@ -19,7 +19,7 @@ nav.drop-down {
     justify-content: center;
     align-items: center;
     flex-wrap: column;
-    z-index: 99999999;
+    z-index: 99999999999;
     transition: 1s;
   }
 
